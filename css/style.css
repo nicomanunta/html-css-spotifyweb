@@ -56,7 +56,7 @@ body{
     padding: 5px;
     border-radius: 50%;
 }
-/* SIDEBAR GRANDE */
+/* SIDEBAR GRANDE top */
 .row-sidebar-grande{
     display: none;
     padding: 10px 0px;
@@ -88,8 +88,33 @@ body{
     color: rgba(124,126,130,255);
     padding: 5px 5px;
     font-size: 14px;
-
+    list-style: none;
 }
+.sidebar-playlist{
+    color: rgba(124,126,130,255);
+    padding-left: 20px;
+    font-size: 14px;
+}
+.titolo-playlist{
+    color: white;
+    font-size: 14px;
+    padding: 10px 0px;
+}
+.list-playlist{
+    list-style: none;
+    font-size: 13px;
+    padding: 8px 0px;
+    
+}
+.plus{
+    padding: 2px 9px;
+    color: black;
+    background-color: rgba(124,126,130,255);
+    font-size: 25px;
+    vertical-align: middle;
+}
+/* SIDEBAR GRANDE bottom */
+
 /* SECONDO BLOCCO, DA DIVIDERE A SUA VOLTA IN HEADER E MAIN */
 .center{
     width: calc(100vw - 50px);
