@@ -39,12 +39,13 @@ main{
 }
 .row{
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
+    margin-top: 85px;
 }
 .column{
     margin: 10px;
-    width: calc(100% / 4 - 20px);
-    margin-top: 85px;
+    width: calc(100% / 2 - 20px);
+    
                                     height: 100px;
                                     background-color: blue;
 
