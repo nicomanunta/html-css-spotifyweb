@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 /*  DIVISIONE DELLA STRUTTURA IN DUE MACROAREE */
 .top-block{
     height: calc(100vh - 75px);
@@ -34,7 +37,20 @@ header{
     position: fixed;
     width: 100%;
     height: 75px;
-                                    background-color: rgba(128, 128, 128, 0.647);
+    background-color: rgba(20, 25, 34, 0.613);
+    text-align:;
+    
+}
+.upgrade{
+    background-color: rgba(20, 25, 34, 0.613);
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 16px;
+    right: 60px;
+    
 }
 /* MAIN */
 main{
@@ -64,17 +80,26 @@ main{
     .sidebar{
         width: 200px;
     }
+    .upgrade{
+        right: 170px;
+    }
 }
 /* 768px */
 @media screen and (min-width: 768px) {
     .column{
         width: calc(100% / 4 - 20px);
     }
+    .upgrade{
+        right: 180px;
+    }
 }
 /* 992px */
 @media screen and (min-width: 992px) {
     .column{
         width: calc(100% / 6 - 20px);
+    }
+    .upgrade{
+        right: 190px;
     }
 }
 
