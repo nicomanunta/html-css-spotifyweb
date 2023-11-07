@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*  DIVISIONE DELLA STRUTTURA IN DUE MACROAREE */
 .top-block{
     height: calc(100vh - 75px);
                                     background-color: green;
@@ -11,26 +12,31 @@
     height: 75px;
                                     background-color: black;
 }
+/* PRIMA MACROAREE DA DIVIDERE IN DUE BLOCCHI */
 .top-content{
     display: flex;
     height: 100%;
 }
+/* PRIMO BLOCCO, SIDEBAR */
 .sidebar{
     width: 50px;
     
                                     background-color: aqua;
 }
+/* SECONDO BLOCCO, DA DIVIDERE A SUA VOLTA IN HEADER E MAIN */
 .center{
     width: calc(100vw - 50px);
     overflow-y: auto;
                                     background-color: red;
 }
+/* HEADER */
 header{
     position: fixed;
     width: 100%;
     height: 75px;
                                     background-color: rgba(128, 128, 128, 0.647);
 }
+/* MAIN */
 main{
 
 }
@@ -48,5 +54,27 @@ main{
     
                                     height: 100px;
                                     background-color: blue;
-
 }
+
+
+
+/* RESPONSIVE */
+/* 576px */
+@media screen and (min-width: 576px) {
+    .sidebar{
+        width: 200px;
+    }
+}
+/* 768px */
+@media screen and (min-width: 768px) {
+    .column{
+        width: calc(100% / 4 - 20px);
+    }
+}
+/* 992px */
+@media screen and (min-width: 992px) {
+    .column{
+        width: calc(100% / 6 - 20px);
+    }
+}
+
