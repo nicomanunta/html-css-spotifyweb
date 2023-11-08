@@ -363,27 +363,6 @@ h5{
     padding-bottom: 10px;
 }
 
-#volume-line-destra::-webkit-slider-runnable-track {
-    background: #053a5f;
-    height: 0.5rem;
-    
-}
-
-#volume-line-destra::-webkit-slider-thumb {
-    
-    -webkit-appearance: none; 
-    appearance: none;
-    margin-top: -12px; 
-    background-color: #5cd5eb;
-    height: 2rem;
-    width: 1rem;    
-}
-
-
-#volume-line-destra::-moz-range-track {
-    background: rgba(90,90,90,255);
-    height: 0.5rem;
-}
 
 
 
@@ -470,6 +449,26 @@ h5{
     
 
 #range-line::-moz-range-progress {
+    background-color: #4cd23d; 
+}
+
+#volume-line-destra::-moz-range-track {
+    background: rgba(90,90,90,255);
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #volume-line-destra {
+      overflow: hidden;
+      height: 100%;
+      -webkit-appearance: none;
+      
+    }
+    
+}
+    
+
+#volume-line-destra::-moz-range-progress {
     background-color: #4cd23d; 
 }
 
