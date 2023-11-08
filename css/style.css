@@ -223,6 +223,8 @@ main{
 .column-album{
     margin: 10px;
     width: calc(100% / 2 - 20px);
+    text-align: center;
+    
     
                                     
 }
@@ -234,6 +236,26 @@ main{
 }
 .img-album-square{
     width: 100%;
+}
+.titoli-album{
+    color: white;
+    font-size: 13px;
+    padding-top: 10px;
+}
+.sottotitoli-album, .sottotitoli-consigliati{
+    font-size: 11px;
+    color: rgba(112,115,120,255) ;
+    padding-top: 5px;
+}
+.sottotitoli-consigliati{
+    margin-left: 10px;
+
+}
+.album-creati{
+    padding-top: 10px;
+}
+.titolo-creato{
+    padding-bottom: 0px;
 }
 
 
@@ -269,7 +291,7 @@ main{
 }
 /* 768px */
 @media screen and (min-width: 768px) {
-    .column{
+    .column-album{
         width: calc(100% / 4 - 20px);
     }
     .upgrade{
@@ -278,7 +300,7 @@ main{
 }
 /* 992px */
 @media screen and (min-width: 992px) {
-    .column{
+    .column-album{
         width: calc(100% / 6 - 20px);
     }
     .upgrade{
