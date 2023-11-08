@@ -332,10 +332,39 @@ h5{
 .range{
     padding-top: 10px;
     width: 100%;
+    
 }
 #range-line{
     width: 100%;
+    -webkit-appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+
 }
+
+#range-line::-webkit-slider-runnable-track {
+    background: #053a5f;
+    height: 0.5rem;
+    
+  }
+ 
+#range-line::-webkit-slider-thumb {
+    
+    -webkit-appearance: none; 
+    appearance: none;
+    margin-top: -12px; 
+    background-color: #5cd5eb;
+    height: 2rem;
+    width: 1rem;    
+}
+  
+  
+#range-line::-moz-range-track {
+    background: rgba(90,90,90,255);
+    height: 0.5rem;
+}
+
+
 
 
 .col-30-destra{
@@ -345,8 +374,8 @@ h5{
 
 #volume-line-destra{
     width: 80px;
-    
     display: none;
+    background-color: transparent;
 }
 .list-display-volume{
     font-size: 13px;
@@ -354,6 +383,31 @@ h5{
     padding: 0px 5px;
     padding-bottom: 10px;
 }
+
+#volume-line-destra::-webkit-slider-runnable-track {
+    background: #053a5f;
+    height: 0.5rem;
+    
+  }
+ 
+#volume-line-destra::-webkit-slider-thumb {
+    
+    -webkit-appearance: none; 
+    appearance: none;
+    margin-top: -12px; 
+    background-color: #5cd5eb;
+    height: 2rem;
+    width: 1rem;    
+}
+  
+  
+#volume-line-destra::-moz-range-track {
+    background: rgba(90,90,90,255);
+    height: 0.5rem;
+}
+
+
+
 
 
 
