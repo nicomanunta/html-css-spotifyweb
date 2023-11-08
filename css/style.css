@@ -280,14 +280,16 @@ main{
 }
 .column-bottom{
    padding: 0px 10px; 
-   display: flex;
-   align-items: center;
+   
 }
 .col-30{
     width: 30%;
+    display: flex;
+    align-items: center;
 }
 .col-40{
     width: 40%;
+    text-align: center;
 }
 .img-sinister{
     width: 30px;
@@ -309,12 +311,31 @@ h5{
     color: rgba(112,115,120,255);
 }
 .cuore-cartella{
-    padding-left: 20px;
+    padding-left: 11px;
     
     
 }
 .lo> i {
     padding: 4px 0px;
+}
+.content-play{
+    width: 100%;
+}
+.music-button{
+    font-size: 15px;
+    padding: 0px 4px;
+    vertical-align: middle;
+}
+.play-button{
+    font-size: 20px;
+    
+}
+.range{
+    padding-top: 10px;
+    width: 100%;
+}
+#range-line{
+    width: 100%;
 }
 
 
