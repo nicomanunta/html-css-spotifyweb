@@ -166,14 +166,14 @@ body{
 .center{
     width: calc(100vw - 50px);
     overflow-y: auto;
-                                    background-color: red;
+    background-color: rgba(20,25,34,255);
 }
 /* HEADER */
 header{
     position: fixed;
     width: 100%;
     height: 75px;
-    background-color: rgba(20, 25, 34, 0.613);
+    background-color: rgba(0, 0, 0, 0.613);
    
     
 }
@@ -190,22 +190,50 @@ header{
 }
 /* MAIN */
 main{
-
+    margin-top: 85px;
+    background-color: rgba(20,25,34,255);
 }
-.container{
+.content-nav{
+    width: 100%;
+    text-align: center;
+}
+.list-nav{
+    display: inline-block;
+    font-size: 11px;
+    padding: 0px 5px;
+    font-weight: 600;
+    line-height: 40px;
+    color: rgba(112,115,120,255);
+}
+.decoration{
+    text-decoration: 2px underline rgba(173,255,47,255);
+  
+}
+
+
+
+.container-album{
     width: 100%;
 }
-.row{
+.row-album{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 85px;
+    
 }
-.column{
+.column-album{
     margin: 10px;
     width: calc(100% / 2 - 20px);
     
-                                    height: 100px;
-                                    background-color: blue;
+                                    
+}
+.titoli-consigliati{
+    margin-left: 10px;
+    color: white;
+    padding: 10px 0px;
+    font-size: 22px;
+}
+.img-album-square{
+    width: 100%;
 }
 
 
