@@ -274,7 +274,6 @@ main{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     
 }
@@ -282,7 +281,7 @@ main{
    padding: 0px 10px; 
    
 }
-.col-30{
+.col-30-sinistra{
     width: 30%;
     display: flex;
     align-items: center;
@@ -339,6 +338,24 @@ h5{
 }
 
 
+.col-30-destra{
+    width: 30%;
+    text-align: end;
+}
+
+#volume-line-destra{
+    width: 80px;
+    
+    display: none;
+}
+.list-display-volume{
+    font-size: 13px;
+    vertical-align: middle;
+    padding: 0px 5px;
+    padding-bottom: 10px;
+}
+
+
 
 
 
@@ -365,6 +382,13 @@ h5{
     }
     .row-sidebar-grande{
         display: flex;
+    }
+    #volume-line-destra{
+        display: inline;
+    } 
+    .list-display-volume{
+        padding: 0px 2px;
+        padding-bottom: 10px;
     }
 }
 /* 768px */
