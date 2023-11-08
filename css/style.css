@@ -251,11 +251,15 @@ main{
     margin-left: 10px;
 
 }
-.album-creati{
+.padding-album{
     padding-top: 10px;
 }
 .titolo-creato{
     padding-bottom: 0px;
+}
+.img-album-circle{
+    width: 100%;
+    border-radius: 50%;
 }
 
 
