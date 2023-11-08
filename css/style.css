@@ -280,6 +280,8 @@ main{
 }
 .column-bottom{
    padding: 0px 10px; 
+   display: flex;
+   align-items: center;
 }
 .col-30{
     width: 30%;
@@ -288,13 +290,16 @@ main{
     width: 40%;
 }
 .img-sinister{
-    width: 20%;
-    float:inline-start
+    width: 30px;
+
+    
 
 }
 
 .sinister{
-    padding-left: 40px;
+    padding-left: 5px;
+    
+    line-height: 12px;
 }
 h5{
     color: white;
@@ -303,6 +308,16 @@ h5{
     font-size: 11px;
     color: rgba(112,115,120,255);
 }
+.cuore-cartella{
+    padding-left: 20px;
+    
+    
+}
+.lo> i {
+    padding: 4px 0px;
+}
+
+
 
 
 
