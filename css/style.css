@@ -122,13 +122,13 @@ body{
     font-size: 25px;
     vertical-align: middle;
 }
-.hover-playlist:hover {
+.hover-playlist:hover .crea-playlist {
     color: white;
     cursor: pointer;
 }
- .plus:hover {
-   background-color: white;
-   cursor: pointer;
+.hover-playlist:hover .plus {
+    background-color: white;
+    cursor: pointer;
 }
 .overflow-sidebar{
     height: 30vh;
@@ -168,6 +168,10 @@ body{
 .grey{
     color: rgba(124,126,130,255);
     vertical-align: middle;
+}
+.grey:hover{
+    color: white;
+    cursor: pointer;
 }
 .white{
     color: white;
@@ -393,9 +397,12 @@ h5:hover{
     position: relative;
 }
 .range-point{
-    display: none;
     width: 15px;
     height: 15px;
+}
+
+.range-point, .range-point-volume{
+    display: none;
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -404,6 +411,8 @@ h5:hover{
     background-color: lightgrey;
     
 }
+
+
 .range-line:hover .range-time{
     background-color: rgba(173,255,47,255);
     
@@ -452,16 +461,17 @@ h5:hover{
     background-color: lightgray;
     position: relative;
 }
-.range-point{
-    display: none;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(0, -50%);
-    background-color: lightgrey;
+.range-point-volume{
+    width: 10px;
+    height: 10px;
+}
+
+.volume-line:hover .range-volume{
+    background-color: rgba(173,255,47,255);
+    
+}
+.volume-line:hover .range-point-volume{
+    display: block;
     
 }
 .d-flex{
