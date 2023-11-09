@@ -81,6 +81,7 @@ body{
 .home, .cerca{
     vertical-align: middle;
 }
+
 .home{
     color: white;
 }
@@ -89,6 +90,11 @@ body{
     padding: 5px 5px;
     font-size: 14px;
     list-style: none;
+}
+.list-sidebar-grande:hover, .list-sidebar-grande:hover .svg-filter{
+    color: white;
+    cursor: pointer;
+    filter: invert(0%);
 }
 .sidebar-playlist{
     color: rgba(124,126,130,255);
@@ -104,7 +110,10 @@ body{
     list-style: none;
     font-size: 13px;
     padding: 8px 0px;
-    
+}
+.list-playlist:hover{
+    color: white;
+    cursor: pointer;
 }
 .plus{
     padding: 2px 9px;
@@ -112,6 +121,14 @@ body{
     background-color: rgba(124,126,130,255);
     font-size: 25px;
     vertical-align: middle;
+}
+.hover-playlist:hover {
+    color: white;
+    cursor: pointer;
+}
+ .plus:hover {
+   background-color: white;
+   cursor: pointer;
 }
 .overflow-sidebar{
     height: 30vh;
@@ -185,6 +202,9 @@ header{
     right: 60px;
     
 }
+.upgrade:hover{
+    padding: 12px 22px;
+}
 /* MAIN */
 /* prima parte elenco di navigazione */
 main{
@@ -202,6 +222,10 @@ main{
     font-weight: 600;
     line-height: 40px;
     color: rgba(112,115,120,255);
+}
+.list-nav:hover{
+    color: white;
+    cursor: pointer;
 }
 .list-evidenza{
     position: relative;
@@ -266,6 +290,7 @@ main{
 }
 /* SECONDA MACROAREA */
 /* PLAYER */
+/* colonna sinistra */
 .bottom-block{
     position: relative;
     z-index: 2;
@@ -298,28 +323,38 @@ main{
 }
 .img-sinister{
     width: 30px;
-
-    
-
 }
 
 .sinister{
     padding-left: 5px;
-    
     line-height: 12px;
 }
 h5{
     color: white;
 }
+h5:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 .brano-nome{
     font-size: 11px;
     color: rgba(112,115,120,255);
 }
+.brano-nome:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 .cuore-cartella{
     padding-left: 11px;
-    
+    color: rgba(112,115,120,255);
     
 }
+.cuore:hover, .cartella:hover{
+    color: white;
+    cursor: pointer;
+}
+
+/* colonna centrale */
 .content-play{
     width: 100%;
 }
@@ -330,7 +365,9 @@ h5{
 }
 .play-button{
     font-size: 20px;
-    
+}
+.play-button:hover{
+    font-size: 21px;
 }
 .controller-time{
     padding-top: 10px;
@@ -378,6 +415,7 @@ h5{
 .minutaggio-min, .minutaggio-max{
     color: white;
     font-size: 8px;
+    vertical-align: middle;
     
 }
 .minutaggio-min{
@@ -388,15 +426,14 @@ h5{
 }
 
 
+/* colonna destra */
 .col-30-destra{
     width: 30%;
     text-align: end;
 }
 
-
 .list-display-volume{
     font-size: 13px;
-    
     padding: 0px 5px;
    
 }
@@ -432,19 +469,6 @@ h5{
     justify-content: center;
     align-items: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -491,14 +515,3 @@ h5{
         right: 190px;
     }
 }
-
-
-
-
-
-
-
- 
-
-  
-  
