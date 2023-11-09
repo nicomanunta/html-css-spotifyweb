@@ -203,9 +203,15 @@ main{
     line-height: 40px;
     color: rgba(112,115,120,255);
 }
-.decoration{
-    text-decoration: 2px underline rgba(173,255,47,255);
-  
+.list-evidenza{
+    position: relative;
+}
+.linea-evidenza{
+    position: absolute;
+    bottom: 10px;
+    left: 28px;
+    color: rgba(173,255,47,255);
+    padding: 0px 10px;
 }
 
 /* album */
@@ -332,15 +338,31 @@ h5{
 .range{
     padding-top: 10px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
 }
 #range-line{
-    width: 100%;
+    width: 70%;
     -webkit-appearance: none;
     background-color: transparent;
     cursor: pointer;
 
 }
+.minutaggio-min, .minutaggio-max{
+    color: white;
+    font-size: 11px;
+    
+}
+.minutaggio-min{
+    padding-right: 4px;
+}
+.minutaggio-max{
+    padding-left: 4px;
+}
+
+
 
 
 
