@@ -335,7 +335,7 @@ h5{
     font-size: 20px;
     
 }
-.range{
+.controller-time{
     padding-top: 10px;
     width: 100%;
     display: flex;
@@ -343,16 +343,44 @@ h5{
     align-items: center;
     
 }
-#range-line{
-    width: 70%;
-    -webkit-appearance: none;
-    background-color: transparent;
-    cursor: pointer;
 
+.range-line{
+ height: 4px;
+ width: 70%;
+ background-color: grey;
+ border-radius: 5px;
+ cursor: pointer;
+}
+.range-time{
+    height: 4px;
+    width: 20%;
+    border-radius: 5px;
+    background-color: lightgray;
+    position: relative;
+}
+.range-point{
+    display: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    background-color: lightgrey;
+    
+}
+.range-line:hover .range-time{
+    background-color: rgba(173,255,47,255);
+    
+}
+.range-line:hover .range-point{
+    display: block;
+    
 }
 .minutaggio-min, .minutaggio-max{
     color: white;
-    font-size: 11px;
+    font-size: 8px;
     
 }
 .minutaggio-min{
@@ -454,7 +482,7 @@ h5{
 
   
   
-#range-line::-moz-range-track {
+/* #range-line::-moz-range-track {
     background: rgba(90,90,90,255);
 }
 
@@ -494,4 +522,4 @@ h5{
     background-color: #4cd23d; 
 }
 
-
+ */
